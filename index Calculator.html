@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#clear{
+    width: 170px;
+    border:1px solid grey ;
+    border-radius: 5px;
+    background-color: brown;
+    font-weight: 30px;
+}
+
+.formstyle{
+    width: 280px;
+    height: 350px; 
+    border: 3px solid black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: greenyellow;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(0, 0, 0);
+    font-size: 15px;
+    width: 180px;
+    height: 30px;
+
+}  
+</style>
+<body>
+    <div class="formstyle">
+        <form name="forms">
+    <input type="text" name="ansewer"> <br> </br>
+    <input type="button" value=" 1 " onclick="forms.ansewer.value += '1'">
+    <input type="button" value=" 2 " onclick="forms.ansewer.value += '2'">
+    <input type="button" value=" 3 " onclick="forms.ansewer.value += '3'">
+    <br>
+    <input type="button" value=" 4 " onclick="forms.ansewer.value += '4'">
+    <input type="button" value=" 5 " onclick="forms.ansewer.value += '5'">
+    <input type="button" value=" 6 " onclick="forms.ansewer.value += '6'">
+    <br>
+    <input type="button" value=" 7 " onclick="forms.ansewer.value += '7'">
+    <input type="button" value=" 8 " onclick="forms.ansewer.value += '8'">
+    <input type="button" value=" 9 " onclick="forms.ansewer.value += '9'">
+    <br>
+    <input type="button" value=" + " onclick="forms.ansewer.value += '+'">
+    <input type="button" value=" - " onclick="forms.ansewer.value += '-'">
+    <input type="button" value=" * " onclick="forms.ansewer.value += '*'">
+    <br>
+    <input type="button" value=" / " onclick="forms.ansewer.value += '/'">
+    <input type="button" value=" 0 " onclick="forms.ansewer.value += '0'">
+    <input type="button" value=" = " onclick="forms.ansewer.value = eval(forms.ansewer.value) ">
+    <br> <br> <input type="button" value=" clear all " onclick="forms.ansewer.value = '  '" id = "clear">
+    <button class="btn"> Simple Calculator</button> 
+    </form>
+    </div>      
+</body>
+</html>
+
+    
+
